@@ -1,1 +1,1 @@
-This is a personal projects to grasp the core concepts of dotnet with my assistant, ChatGPT.
+This is a personal projects to grasp the core concepts of dotnet and angular with my assistant, ChatGPT.
