@@ -1,0 +1,30 @@
+@TaskManagementAPI_HostAddress = http://localhost:5253
+
+### Get all tasks
+GET {{TaskManagementAPI_HostAddress}}/api/tasks
+
+### Get a single task by ID
+GET {{TaskManagementAPI_HostAddress}}/api/tasks/1
+
+### Create a new task
+POST {{TaskManagementAPI_HostAddress}}/api/tasks
+Content-Type: application/json
+
+{
+    "title": "Learn .NET Core",
+    "description": "Complete the .NET Core tutorials",
+    "isCompleted": false
+}
+
+### Update an existing Task
+PUT {{TaskManagementAPI_HostAddress}}/api/tasks/1
+Content-Type: application/json
+
+{
+    "title": "Learn .NET Core (Updated)",
+    "description": "Complete the .NET Core tutorials and practice",
+    "isCompleted": true
+}
+
+### Delete a task by ID
+DELETE {{TaskManagementAPI_HostAddress}}/api/tasks/1
