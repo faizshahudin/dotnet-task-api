@@ -17,10 +17,11 @@ Content-Type: application/json
 }
 
 ### Update an existing Task
-PUT {{TaskManagementAPI_HostAddress}}/api/tasks/1
+PUT {{TaskManagementAPI_HostAddress}}/api/tasks/2
 Content-Type: application/json
 
 {
+    "id": 2,
     "title": "Learn .NET Core (Updated)",
     "description": "Complete the .NET Core tutorials and practice",
     "isCompleted": true
